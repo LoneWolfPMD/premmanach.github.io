@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cafe Air Focre</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style3.css">
+    </head>
+    <body>
+        <section class="header">
+            <header>
+                <!-- navbar -->
+                 <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="logo">Cafe Air Force</div>
+                        <ul class="nav-list">
+                            <li><a href="#">หน้าหลัก</a></li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" >สินค้า</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">cookie(หมด)</a></li>
+                                    <li><a href="#" class="dropdown-item">เครื่องดื่ม(หมด)</a></li>
+                                    <li><a href="#" class="dropdown-item">ขนมปัง(หมด)</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a href="#" class="dropdown-item">ของที่ระลึก(หมด)</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Product.html">สินค้า</a></li>
+                            <li><a href="card.html">บริการ</a></li>
+                            <li><a href="About.html">เกี่ยวกับเรา</a></li>
+                        </ul>
+                    </nav>
+                 </div>
+            </header>
+        </section>
+        <br>
+        <!-- tab -->
+         <div class="d-flex align-items-start">
+            <ul class="nav nav-tab" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="cookie-tab" data-bs-toggle="tab" data-bs-target="#cookie" type="button" role="tab" aria-controls="cookie" aria-selected="true">Cookie</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="drink-tab" data-bs-toggle="tab" data-bs-target="#drink" type="button" role="tab" aria-controls="drink" aria-selected="false">Drink</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="bread-tab" data-bs-toggle="tab" data-bs-target="#bread" type="button" role="tab" aria-controls="bread" aria-selected="false">Bread</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="souvenir-tab" data-bs-toggle="tab" data-bs-target="#souvenir" type="button" role="tab" aria-controls="souvenir" aria-selected="false">Souvenir</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="cookie" role="tabpanel" aria-labelledby="cookie-tab">
+                    1.Cookie A cookie (American English) or biscuit (British English) is a baked snack or dessert that is typically small, flat, and sweet. It usually contains flour, sugar, egg, and some type of oil, fat, or butter. It may include other ingredients such as raisins, oats, chocolate chips, or nuts.
+                </div>
+                <div class="tab-pane fade" id="drink" role="tabpanel" aria-labelledby="drink-tab">
+                    2.Drink A drink or beverage is a liquid intended for human consumption. In addition to their basic function of satisfying thirst, drinks play important roles in human culture. Common types of drinks include plain drinking water, milk, juice, smoothies and soft drinks. Traditionally warm beverages include coffee, tea, and hot chocolate. Caffeinated drinks that contain the stimulant caffeine have a long history.
+                </div>
+                <div class="tab-pane fade" id="bread" role="tabpanel" aria-labelledby="bread-tab">
+                    3.Bread Bread is a staple food prepared from a dough of flour (usually wheat) and water, usually by baking. Throughout recorded history and around the world, it has been an important part of many cultures' diet. It is one of the oldest human-made foods, having been of significance since the dawn of agriculture, and plays an essential role in both religious rituals and secular culture.
+                </div>
+                <div class="tab-pane fade" id="souvenir" role="tabpanel" aria-labelledby="souvenir-tab">
+                    4.Souvenir A souvenir (French for 'a remembrance or memory'), memento, keepsake, or token of remembrance is an object a person acquires for the memories the owner associates with it. A souvenir can be any object that can be collected or purchased and transported home by the traveler as a memento of a visit. The object itself may have intrinsic value, or be a symbol of experience. Without the owner's input, the symbolic meaning is lost and cannot be articulated
+                </div>
+            </div>
+         </div>
+         <!-- Re tab -->
+         <div class="tab-container">
+            <ul class="tab-list">
+              <li class="tab active" onclick="switchTab(event, 'cookie')" aria-selected="true">Cookie</li>
+              <li class="tab" onclick="switchTab(event, 'drink')" aria-selected="false">Drink</li>
+              <li class="tab" onclick="switchTab(event, 'bread')" aria-selected="false">Bread</li>
+              <li class="tab" onclick="switchTab(event, 'souvenir')" aria-selected="false">Souvenir</li>
+            </ul>
+        
+            <div class="tab-content" role="tablist" aria-labelledby="v-pills-cookie-tab">
+              <div id="cookie" class="tab-pane active">
+                <h2>Cookie</h2>
+                <p>1.Cookie A cookie (American English) or biscuit (British English) is a baked snack or dessert that is typically small, flat, and sweet. It usually contains flour, sugar, egg, and some type of oil, fat, or butter. It may include other ingredients such as raisins, oats, chocolate chips, or nuts.</p>
+              </div>
+              <div id="drink" class="tab-pane">
+                <h2>Drink</h2>
+                <p>2.Drink A drink or beverage is a liquid intended for human consumption. In addition to their basic function of satisfying thirst, drinks play important roles in human culture. Common types of drinks include plain drinking water, milk, juice, smoothies and soft drinks. Traditionally warm beverages include coffee, tea, and hot chocolate. Caffeinated drinks that contain the stimulant caffeine have a long history.</p>
+              </div>
+              <div id="bread" class="tab-pane">
+                <h2>Bread</h2>
+                <p>3.Bread Bread is a staple food prepared from a dough of flour (usually wheat) and water, usually by baking. Throughout recorded history and around the world, it has been an important part of many cultures' diet. It is one of the oldest human-made foods, having been of significance since the dawn of agriculture, and plays an essential role in both religious rituals and secular culture.</p>
+              </div>
+              <div id="souvenir" class="tab-pane">
+                <h2>Souvenir</h2>
+                <p> 4.Souvenir A souvenir (French for 'a remembrance or memory'), memento, keepsake, or token of remembrance is an object a person acquires for the memories the owner associates with it. A souvenir can be any object that can be collected or purchased and transported home by the traveler as a memento of a visit. The object itself may have intrinsic value, or be a symbol of experience. Without the owner's input, the symbolic meaning is lost and cannot be articulated</p>
+              </div>
+            </div>
+          </div>
+        
+          <script src="script.js"></script>
+
+         <!-- pills -->
+          <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills" id="v-pills" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="cookie-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cookie" type="button" role="tab" aria-controls="v-pills-cookie" aria-selected="true">Cookie</button>
+            
+                <button class="nav-link " id="drink-tab" data-bs-toggle="pill" data-bs-target="#v-pills-drink" type="button" role="tab" aria-controls="v-pills-drink" aria-selected="false">Drink</button>
+            
+                <button class="nav-link " id="bread-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bread" type="button" role="tab" aria-controls="v-pills-bread" aria-selected="false">Bread</button>
+            
+                <button class="nav-link " id="souvenir-tab" data-bs-toggle="pill" data-bs-target="#v-pills-souvenir" type="button" role="tab" aria-controls="v-pills-souvenir" aria-selected="false">Souvenir</button>
+            </div>
+            <div class="tab-content" id="v-pills-tabcontent">
+                <div class="tab-pane fade show active" id="v-pills-cookie" role="tabpanel" aria-labelledby="v-pills-cookie-tab">
+                    1.Cookie A cookie (American English) or biscuit (British English) is a baked snack or dessert that is typically small, flat, and sweet. It usually contains flour, sugar, egg, and some type of oil, fat, or butter. It may include other ingredients such as raisins, oats, chocolate chips, or nuts.
+                </div>
+                <div class="tab-pane fade" id="v-pills-drink" role="tabpanel" aria-labelledby="v-pills-drink-tab">
+                    2.Drink A drink or beverage is a liquid intended for human consumption. In addition to their basic function of satisfying thirst, drinks play important roles in human culture. Common types of drinks include plain drinking water, milk, juice, smoothies and soft drinks. Traditionally warm beverages include coffee, tea, and hot chocolate. Caffeinated drinks that contain the stimulant caffeine have a long history.
+                </div>
+                <div class="tab-pane fade" id="v-pills-bread" role="tabpanel" aria-labelledby="v-pills-bread-tab">
+                    3.Bread Bread is a staple food prepared from a dough of flour (usually wheat) and water, usually by baking. Throughout recorded history and around the world, it has been an important part of many cultures' diet. It is one of the oldest human-made foods, having been of significance since the dawn of agriculture, and plays an essential role in both religious rituals and secular culture.
+                </div>
+                <div class="tab-pane fade" id="v-pills-souvenir" role="tabpanel" aria-labelledby="v-pills-souvenir-tab">
+                    4.Souvenir  A souvenir (French for 'a remembrance or memory'), memento, keepsake, or token of remembrance is an object a person acquires for the memories the owner associates with it. A souvenir can be any object that can be collected or purchased and transported home by the traveler as a memento of a visit. The object itself may have intrinsic value, or be a symbol of experience. Without the owner's input, the symbolic meaning is lost and cannot be articulated
+                </div>
+            </div>
+          </div>
+        <div class="container box">
+            <a href="index.html" class="btn btn-info">กลับสู่หน้าหลัก</a>
+            <a href="Product.html" class="btn btn-info">สินค้า</a>
+            <a href="card.html" class="btn btn-info">ข้อมูลสินค้า</a>
+            <a href="About.html" class="btn btn-info">เกี่ยวกับเรา</a>
+            <a href="register.html" class="btn btn-info">สมัครสมาชิก</a>
+            <a href="login.html" class="btn btn-info">ลงชื่อ</a>
+            <a href="pills.html" class="btn btn-info">WikiCafe</a>
+        </div>
+          
+    
+    </body>
+</html>
